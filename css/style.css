@@ -4,7 +4,7 @@
 header {
   background-image: url('../medias/vitrine-boulanger-pain-commerce.jpg');
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -115,6 +115,28 @@ footer {
 }
 
 /* presentation boulangerie */
+
+.carousel-border{
+  border: 30px #151515;
+  border-radius: 24px;
+}
+.carousel{
+  border: 30px #151515;
+}
+.carousel-indicators{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  .active{
+    background: #151515;
+    color: #CEBEA7;
+    border-radius: 24px;
+  }
+}
+.icon-carousel{
+  font-size: 30px;
+}
 
 .section-title{
   display: flex;
