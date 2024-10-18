@@ -108,6 +108,7 @@ footer {
 }
 
 .nav-button {
+  text-decoration: none;
   align-self: stretch;
   border-radius: 12px;
   background-color: #9F6848;
@@ -121,6 +122,8 @@ footer {
 }
 
 .nav-button:hover {
+  color: #f2f2f2;
+  text-decoration: none;
   background-color: #71452c;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
 }
@@ -133,6 +136,7 @@ footer {
 }
 
 .loyalty-button {
+  text-decoration: none;
   align-self: stretch;
   border-radius: 12px;
   background-color: #fff0da;
@@ -149,37 +153,25 @@ footer {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
 }
 
-/* presentation boulangerie */
-
-.carousel-border{
-  border: 30px #151515;
-  border-radius: 24px;
-}
-.carousel{
-  border: 30px #151515;
-}
 .carousel-indicators{
   display: flex;
   justify-content: center;
   gap: 20px;
-
-  .active{
-    background: #151515;
-    color: #CEBEA7;
-    border-radius: 24px;
-  }
 }
+
 .icon-carousel{
   font-size: 30px;
 }
 
-.carousel-border{
-  border: 30px #151515;
+.carousel-inner{
   border-radius: 24px;
 }
-.carousel{
-  border: 30px #151515;
+
+.carousel-item .d-block{
+  border-radius: 24px;
+  border: 3px solid #151515;
 }
+
 .carousel-indicators{
   display: flex;
   justify-content: center;
@@ -238,7 +230,7 @@ footer {
   justify-content: center;
   width: 100%;
   max-width: 576px;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   border: 3px solid #000;
   border-radius: 24px;
@@ -261,6 +253,8 @@ footer {
   color: #f2f2f2;
   font-size: 25px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 3px solid #000;
+  border-radius: 24px;
 }
 
 .btn-formulaire:hover {
@@ -274,6 +268,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #151515;
+  border: 3px solid #000;
+  border-radius: 24px;
+  background-color: #f2f2f2;
 }
 
 .barre-separation {
@@ -293,6 +291,10 @@ footer {
   display: none;
 }
 
+#carouselExampleIndicators {
+  margin-bottom: 30px;
+}
+
 /* medias */
 
 @media(max-width: 930px) {
@@ -303,6 +305,10 @@ footer {
   .navigation {
     justify-content: flex-end;
     padding-right: 30px;
+  }
+
+  .icon-carousel{
+    font-size: 20px;
   }
 
   .image-row {
