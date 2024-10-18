@@ -30,14 +30,37 @@
             rel="stylesheet">
     </head>
     <body>
-        <header>
-            <div class="header-content">
-                <img src="medias/logo.png" class="logo" alt="Company logo"/>
-                <nav class="navigation">
-                    <a href="#" class="nav-button">Accueil</a>
-                    <a href="#" class="nav-button">Nos Offres</a>
-                    <a href="#" class="nav-button">Contact</a>
-                    <a href="#" class="loyalty-button">Compte Fidélité</a>
+        <header id="TopPage">
+            <div id="MenuNavbar" class="header-content">
+                <img id="LogoNav" src="medias/logo.png" class="logo"
+                    alt="Company logo" />
+                <nav>
+                    <div class="navigation">
+                        <a></a>
+                        <a href="#TopPage"
+                            class="nav-button HideOnMobile">Accueil</a>
+                        <a href="#Offres" class="nav-button HideOnMobile">Nos
+                            Offres</a>
+                        <a href="#Contacts"
+                            class="nav-button HideOnMobile">Contact</a>
+                        <a class="loyalty-button HideOnMobile">Compte
+                            Fidélité</a>
+                        <a><svg id="MenuOpen" xmlns="http://www.w3.org/2000/svg"
+                                height="60px" viewBox="0 -960 960 960"
+                                width="60px" fill="#151515"><path
+                                    d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></a>
+                    </div>
+                    <div class="sidebar">
+                        <a><svg id="MenuClose"
+                                xmlns="http://www.w3.org/2000/svg" height="60px"
+                                viewBox="0 -960 960 960" width="60px"
+                                fill="#151515"><path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg></a>
+                        <a href="#TopPage" class="nav-button">Accueil</a>
+                        <a href="#Offres" class="nav-button">Nos Offres</a>
+                        <a href="#Contacts" class="nav-button">Contact</a>
+                        <a class="loyalty-button">Compte Fidélité</a>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -94,7 +117,8 @@
                     </div>
                 </div>
             </section>
-            <section class="diviseur"><div class="barre-separation"></div></section>
+            <section class="diviseur"><div
+                    class="barre-separation"></div></section>
             <section id="Offres" class="div_images">
                 <h2 class="section-title">Nos Offres</h2>
                 <div id="carouselExampleControls" class="carousel slide"
@@ -162,35 +186,43 @@
                     </div>
                 </div>
             </section>
-            <section class="diviseur"><div class="barre-separation"></div></section>
+            <section class="diviseur"><div
+                    class="barre-separation"></div></section>
             <section id="Contacts" class="div_contact">
                 <h2 class="section-title">Contactez-nous</h2>
-                <div class="">
+                <div class>
                     <form>
                         <div class="form-group">
                             <label for="nom">Nom:</label>
-                            <input class="form-control" type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                            <input class="form-control" type="text" id="nom"
+                                name="nom" placeholder="Votre nom" required>
                         </div>
                         <div class="form-group">
                             <label for="prenom">Prénom:</label>
-                            <input class="form-control" type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                            <input class="form-control" type="text" id="prenom"
+                                name="prenom" placeholder="Votre prénom"
+                                required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input class="form-control" type="email" id="email" name="email" placeholder="Votre email" required>
+                            <input class="form-control" type="email" id="email"
+                                name="email" placeholder="Votre email" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message:</label>
-                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                            <textarea class="form-control" id="message"
+                                name="message" rows="5"
+                                placeholder="Votre message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-formulaire form-control">Envoyer</button>
+                        <button type="submit"
+                            class="btn btn-formulaire form-control">Envoyer</button>
                     </form>
                 </div>
             </section>
         </main>
         <footer>
             <div class="copyright-container">
-                <img src="medias/logo.png" class="logo"/>
+                <img src="medias/logo.png" class="logo" />
                 <span>
                     Copyright © Baptiste Freminet Lenny Moinardeau 2024
                     <br />
@@ -198,6 +230,7 @@
                 </span>
             </div>
             <script src="js/style.js"></script>
+            <script src="js/menu.js"></script>
         </footer>
     </body>
 </html>
